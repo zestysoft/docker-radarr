@@ -33,7 +33,7 @@ RUN \
     /tmp/radarr.tar.gz -C \
     /app/radarr/bin --strip-components=1 && \
   echo "**** download and replace outdated ffprobe ****" && \
-  curl -o /tmp/ffmpeg-release-64bit-static.tar.xz -L "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-arm64-static.tar.xz" && \
+  curl -o /tmp/ffmpeg-release-64bit-static.tar.xz -L "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz" && \
   tar -xJf /tmp/ffmpeg-release-64bit-static.tar.xz -C /tmp && \
   mv /tmp/ffmpeg-*-arm64-static/ffprobe /app/radarr/bin/ffprobe && \
   chmod +x /app/radarr/bin/ffprobe && \
